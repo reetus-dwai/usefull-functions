@@ -16,3 +16,13 @@ function arrayFromBounds(start, end){
     return ret
 }
 
+//return whether an number (in the form of an array) is self divisible
+//advise using function aonfaos above
+function selfDivisible(array, number){
+    for(let i=0; i<array.length; i++){
+        if(number%array[i] != 0){
+            return false
+        }
+    }
+    return true
+}
